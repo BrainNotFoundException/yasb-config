@@ -287,7 +287,7 @@ For more information about configuration options, please visit the Wiki https://
 
 .open-meteo-widget .label {
     font-size: 13px;
-    font-family: "Segoe UI";
+
     font-weight: 400;
     color: rgba(255, 255, 255, 0.8);
     padding-left: 4px;
@@ -302,7 +302,7 @@ For more information about configuration options, please visit the Wiki https://
 
 .open-meteo-card-today .label {
     font-size: 13px;
-    font-family: "Segoe UI";
+
     font-weight: 400;
     color: rgb(163, 163, 163);
 }
@@ -310,13 +310,13 @@ For more information about configuration options, please visit the Wiki https://
 .open-meteo-card-today .label.location {
     font-size: 32px;
     font-weight: 700;
-    font-family: "Segoe UI";
+
     color: rgb(255, 255, 255);
 }
 
 .open-meteo-card-today .label.sunrisesunset {
     font-size: 18px;
-    font-family: "Segoe UI";
+
     font-weight: 600;
     color: rgb(201, 204, 159);
 }
@@ -336,21 +336,21 @@ For more information about configuration options, please visit the Wiki https://
 }
 
 .open-meteo-card-day .day-name {
-    font-family: "Segoe UI";
+
     color: rgba(255, 255, 255, 0.6);
     font-size: 12px;
     font-weight: 600;
 }
 
 .open-meteo-card-day .day-temp-max {
-    font-family: "Segoe UI";
+
     font-weight: 700;
     font-size: 16px;
     color: rgb(255, 255, 255);
 }
 
 .open-meteo-card-day .day-temp-min {
-    font-family: "Segoe UI";
+
     color: rgb(255, 255, 255);
     font-weight: 400;
     font-size: 13px;
@@ -374,7 +374,7 @@ For more information about configuration options, please visit the Wiki https://
 .open-meteo-card .hourly-data {
     font-size: 11px;
     font-weight: 700;
-    font-family: "Segoe UI";
+
 }
 
 .open-meteo-card .hourly-data.temperature {
@@ -423,14 +423,14 @@ For more information about configuration options, please visit the Wiki https://
 
 .open-meteo-card .search-head {
     font-size: 18px;
-    font-family: "Segoe UI";
+
     font-weight: 600;
     color: rgba(255, 255, 255, 0.9);
 }
 
 .open-meteo-card .search-description {
     font-size: 14px;
-    font-family: "Segoe UI";
+
     font-weight: 400;
     color: rgba(255, 255, 255, 0.7);
     padding-bottom: 8px;
@@ -442,7 +442,7 @@ For more information about configuration options, please visit the Wiki https://
 
 .open-meteo-card .no-data-text {
     font-size: 16px;
-    font-family: "Segoe UI";
+
     font-weight: 400;
 }
 
@@ -453,7 +453,7 @@ For more information about configuration options, please visit the Wiki https://
     border-radius: 6px;
     background-color: rgba(17, 17, 27, 0.1);
     color: #cdd6f4;
-    font-family: "Segoe UI";
+
     font-size: 14px;
 }
 
@@ -468,7 +468,7 @@ For more information about configuration options, please visit the Wiki https://
     background-color: rgba(0, 0, 0, 0);
     color: #cbced8;
     font-size: 13px;
-    font-family: "Segoe UI";
+
 }
 
 .open-meteo-card .search-results::item {
@@ -689,7 +689,7 @@ For more information about configuration options, please visit the Wiki https://
 .calendar .calendar-table::item {
     background-color: rgba(17, 17, 27, 0);
     color: rgba(162, 177, 196, 0.85);
-    font-family: "Segoe UI";
+
     margin: 0;
     padding: 0;
     border: none;
@@ -711,7 +711,7 @@ For more information about configuration options, please visit the Wiki https://
 .calendar .date-label,
 .calendar .week-label,
 .calendar .holiday-label {
-    font-family: "Segoe UI";
+
     font-size: 16px;
     color: #fff;
     font-weight: 700;
@@ -795,4 +795,144 @@ For more information about configuration options, please visit the Wiki https://
 .glazewm-workspaces .ws-btn.populated:hover,
 .glazewm-workspaces .ws-btn.empty:hover {
     background-color: #727272;
+}
+
+.wifi-menu {
+    font-family: 'Segoe UI';
+    background-color: rgba(17, 17, 27, 0.4);
+    max-height: 350px;
+    min-height: 375px;
+    min-width: 375px;
+}
+
+.wifi-menu .progress-bar {
+    max-height: 2px;
+    color: #4cc2ff;
+}
+
+.wifi-menu .header {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 12px;
+    background-color: rgba(17, 17, 27, 0.6);
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wifi-menu .error-message {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 2px;
+    padding: 12px;
+    background-color: red;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wifi-menu .wifi-list {
+    background-color: rgba(17, 17, 27, 0.8);
+    margin-right: 3px;
+}
+
+.wifi-menu .wifi-item {
+    min-height: 35px;
+    padding: 2px 12px;
+    margin: 2px 4px;
+}
+
+.wifi-menu .wifi-item:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+}
+
+.wifi-menu .wifi-item[active=true] {
+    background-color: rgba(255, 255, 255, 0.15);
+    font-size: 14px;
+    border-radius: 6px;
+    min-height: 80px;
+}
+
+.wifi-menu .wifi-item .icon {
+    font-family: 'Segoe Fluent Icons';
+    font-size: 26px;
+    margin-right: 10px;
+}
+
+.wifi-menu .wifi-item .name {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+    margin-right: 10px;
+}
+
+.wifi-menu .wifi-item .password {
+    font-family: 'Segoe UI';
+    background-color: transparent;
+    font-size: 14px;
+}
+
+.wifi-menu .wifi-item .status {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+
+.wifi-menu .wifi-item .strength {
+    font-family: 'Segoe UI';
+    font-size: 14px;
+}
+
+.wifi-menu .wifi-item .controls-container {
+    padding-top: 8px;
+}
+
+.wifi-menu .wifi-item .connect {
+    background-color: rgba(255, 255, 255, 0.15);
+    padding: 4px 30px;
+    border-radius: 4px;
+    border: none;
+    font-size: 14px;
+}
+
+.wifi-menu .wifi-item .connect:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.wifi-menu .wifi-item .connect:pressed {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.wifi-menu .footer {
+    font-size: 12px;
+    font-weight: 600;
+    padding: 12px;
+    margin-top: 2px;
+    color: #9399b2;
+    background-color: rgba(17, 17, 27, 0.6);
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.wifi-menu .footer .settings-button {
+    font-family: 'Segoe UI';
+    background-color: transparent;
+    border: none;
+    padding: 0 2px;
+    min-width: 26px;
+    min-height: 26px;
+    color: #fff;
+}
+
+.wifi-menu .footer .refresh-icon {
+    font-family: 'Segoe Fluent Icons';
+    background-color: transparent;
+    border: none;
+    min-width: 26px;
+    min-height: 26px;
+    color: #fff;
+}
+
+.wifi-menu .footer .refresh-icon:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
 }
