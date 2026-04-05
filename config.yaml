@@ -52,11 +52,11 @@ bars:
       - "clock"
       right:
       - "media"
+      - "systray"
       # - "open_meteo"
       - "microphone"
       - "volume"
       # - "notifications"
-      - "systray"
       # - "wifi"
       - "power_menu"
 widgets:
@@ -337,7 +337,7 @@ widgets:
       icon_size: 16 # Can be any integer between 8 and 64
       pin_click_modifier: "alt" # Can be "ctrl", "alt" or "shift"
       show_in_popup: true
-      show_unpinned: false
+      show_unpinned: true
       show_unpinned_button: true
       show_battery: false
       show_volume: false
