@@ -57,7 +57,7 @@ bars:
       - "microphone"
       - "volume"
       # - "notifications"
-      # - "wifi"
+      - "wifi"
       - "power_menu"
 widgets:
   home:
@@ -245,7 +245,7 @@ widgets:
         - "\uf028"
       callbacks:
         on_left: "toggle_mute"
-        on_right: "exec cmd.exe /c start ms-settings:sound"
+        # on_right: "exec cmd.exe /c start ms-settings:sound"
   microphone:
     type: "yasb.microphone.MicrophoneWidget"
     options:
@@ -257,7 +257,7 @@ widgets:
       callbacks:
         on_left: "toggle_mute"
         on_middle: "toggle_label"
-        on_right: "exec cmd.exe /c start ms-settings:sound"
+        # on_right: "exec cmd.exe /c start ms-settings:sound"
   power_menu:
     type: "yasb.power_menu.PowerMenuWidget"
     options:
@@ -338,11 +338,11 @@ widgets:
       pin_click_modifier: "alt" # Can be "ctrl", "alt" or "shift"
       show_in_popup: true
       show_unpinned: true
-      show_unpinned_button: true
-      show_battery: false
-      show_volume: false
-      show_network: false
-      use_hook: true # Whether to use the new systray hook instead of the legacy systray monitor
+      show_unpinned_button: false
+      show_battery: true
+      show_volume: true
+      show_network: true
+      use_hook: false # Whether to use the new systray hook instead of the legacy systray monitor
       hide_icons: [] # Optional, list of process names to hide (e.g. ["discord"])
       btn_shadow:
         enabled: false
