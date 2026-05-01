@@ -331,9 +331,9 @@ widgets:
       show_in_popup: true
       show_unpinned: true
       show_unpinned_button: false
-      show_battery: true
-      show_volume: true
-      show_network: true
+      show_battery: false
+      show_volume: false
+      show_network: false
       use_hook: false # Whether to use the new systray hook instead of the legacy systray monitor
       hide_icons: [] # Optional, list of process names to hide (e.g. ["discord"])
   wifi:
