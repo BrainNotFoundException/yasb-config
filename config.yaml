@@ -17,13 +17,11 @@ bars:
     class_name: "yasb-bar"
     alignment:
       position: "top"
-      center: false
     animation:
       enabled: true
       duration: 400
     blur_effect:
       enabled: false
-      acrylic: false
       dark_mode: false
       round_corners: false
       round_corners_type: "normal"
@@ -106,11 +104,6 @@ widgets:
         max_title_size: 80
         max_artist_size: 20
         show_source: true
-      label_shadow:
-        enabled: true
-        color: "#000000"
-        radius: 2
-        offset: [ 1, 1 ]
       scrolling_label:
         enabled: true
         update_interval_ms: 40
@@ -157,7 +150,6 @@ widgets:
       label_zero_index: false
       hide_empty_workspaces: false
       hide_if_offline: true
-      animation: true
   komorebi_active_layout:
     type: "komorebi.active_layout.ActiveLayoutWidget"
     options:
@@ -344,11 +336,6 @@ widgets:
       show_network: true
       use_hook: false # Whether to use the new systray hook instead of the legacy systray monitor
       hide_icons: [] # Optional, list of process names to hide (e.g. ["discord"])
-      btn_shadow:
-        enabled: false
-        color: "black"
-        radius: 3
-        offset: [ 1, 1 ]
   wifi:
     type: "yasb.wifi.WifiWidget"
     options:
@@ -371,11 +358,6 @@ widgets:
         "\udb82\udd25",  # Icon for 50-74% strength
         "\udb82\udd28"   # Icon for 75-100% strength
       ]
-      label_shadow:
-        enabled: true
-        color: "black"
-        radius: 3
-        offset: [ 1, 1 ]
       menu_config:
         blur: true
         round_corners: true
