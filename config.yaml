@@ -56,6 +56,7 @@ bars:
       - "volume"
       # - "notifications"
       - "wifi"
+      # - "bluetooth"
       - "power_menu"
 widgets:
   home:
@@ -345,7 +346,7 @@ widgets:
       update_interval: 5000
       callbacks:
         on_left: "toggle_menu"
-        on_middle: "exec cmd.exe /c start ms-settings:network"
+        #on_middle: "exec cmd.exe /c start ms-settings:network"
         on_right: "toggle_label"
       ethernet_label: "<span>{wifi_icon}</span>"
       ethernet_label_alt: "<span>{wifi_icon}</span>{ip_addr}"
@@ -379,3 +380,22 @@ widgets:
           "\uec3e",
           "\uec3f",
         ]
+  bluetooth:
+    type: "yasb.bluetooth.BluetoothWidget"
+    options:
+      label: "<span>{icon}</span> {device_count}"
+      label_alt: "{device_name}"
+      label_no_device: "No devices connected"
+      label_device_separator: ", "
+      max_length: 10
+      max_length_ellipsis: "..."
+      icons: 
+        bluetooth_on: "\udb80\udcaf"
+        bluetooth_off: "\udb80\udcb2"
+        bluetooth_connected: "\udb80\udcb1"
+      device_aliases:
+        - name: "T5.0"
+          alias: "\uf025"
+      callbacks:
+        on_left: "toggle_label"
+        #on_right: "exec cmd.exe /c start ms-settings:bluetooth"
